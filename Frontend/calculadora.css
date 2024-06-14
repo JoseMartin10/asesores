@@ -1,0 +1,526 @@
+.divCotizacion {
+    max-width: 1140px;
+    max-height: 1980px;
+    padding-top: 20px;
+}
+
+
+.medios-de-pago p,
+.subsidios p,
+.creditos p {
+    margin-bottom: 2px;
+    /* Ajusta el margen inferior */
+}
+
+.padre-divs {
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.identificador {
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 105px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.identificador span {
+    font-size: 23px;
+}
+
+
+.medios-de-pago,
+.subsidios,
+.creditos {
+    background-color: white;
+    /* Cambia el fondo a blanco */
+    border: 4px solid #859C4C;
+    /* Agrega un borde verde */
+    border-radius: 30px;
+    /* Redondea las esquinas */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    padding: 3px;
+    /* Agrega un poco de espacio interno para mejor visualización */
+    margin: 15px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+
+.medios-de-pago span,
+.subsidios span,
+.creditos span {
+    font-size: 23px;
+}
+
+.requisitos {
+    background-color: white;
+    /* Cambia el fondo a blanco */
+    border: 4px solid #ffffff;
+    /* Agrega un borde verde */
+    border-radius: 10px;
+    /* Redondea las esquinas */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    padding: 10px;
+    /* Agrega un poco de espacio interno para mejor visualización */
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.requisitos p {
+    margin-bottom: -7px;
+}
+
+
+.logo-nombre {
+    display: flex;
+    /* Utilizamos flexbox para controlar el diseño de los elementos */
+    align-items: center;
+    /* Alineamos verticalmente los elementos */
+    justify-content: space-between;
+}
+
+.logo-nombre img {
+    width: 250px;
+    /* Establecemos el ancho deseado para la imagen */
+    height: auto;
+    /* Permitimos que la altura se ajuste automáticamente según el ancho */
+    margin-right: 20px;
+    /* Añadimos un margen a la derecha para separar la imagen del texto */
+}
+
+.logo-nombre p {
+    margin-right: 30px;
+    /* Añadimos un margen a la derecha para separar la imagen del texto */
+}
+
+.linea {
+    background-color: #859C4C;
+    height: 5px;
+    width: 75%;
+    margin-top: 37px;
+    margin-right: 10px;
+    margin-left: 65px;
+
+
+}
+
+.linea-construvid {
+    display: flex;
+}
+
+
+.linea-construvid img {
+    width: 200px;
+    bottom: 5px;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+.correo {
+    font-family: 'Montserrat', sans-serif;
+    width: 700px;
+    background-color: aqua;
+}
+
+.container-correo {
+    display: flex;
+    justify-content: space-between;
+    /* Asegura que las imágenes estén en los extremos del contenedor */
+    align-items: center;
+    /* Alinea las imágenes verticalmente al centro */
+    width: 100%;
+    /* Ancho del contenedor */
+    height: 300px;
+}
+
+.logo-verde-correo {
+    width: 35%;
+    margin-right: 6%;
+    margin-bottom: 4%;
+}
+
+.circulos {
+    width: 30%;
+    /* Permite ajustar la posición de la imagen respecto a su posición normal */
+    margin-left: -10%;
+    margin-bottom: 10%;
+}
+
+.div-circulo2 {
+
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+
+
+.body-correo {
+    width: 100%;
+}
+
+.body-correo h1 {
+    color: #859C4C;
+    font-size: 60px;
+    margin-left: 5%;
+    border-bottom: 4px solid #ADF983;
+    width: fit-content;
+}
+
+.body-correo p {
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+.ver-cotizacion {
+    margin-left: 27%;
+    background-color: #859C4C;
+    padding: 2.5%;
+    font-size: 35px;
+    border-radius: 60px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.boton-wp {
+    margin-left: 18%;
+    background-color: #ADF983;
+    padding: 2.5%;
+    font-size: 35px;
+    border-radius: 60px;
+    color: #859C4C;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.div-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegúrate de que el contenedor ocupe el 100% de la altura de la ventana */
+  }
+
+  @media screen and (max-width: 900px) {
+    .div-body {
+      /* Estilos específicos para dispositivos móviles */
+      flex-direction: column; /* Alinear los elementos en columna */
+      height: auto; /* Cambiar la altura a auto para que se ajuste al contenido */
+      padding: 20px; /* Agregar un poco de espacio alrededor del contenido */
+      width: 90%; /* Ajustar el ancho al 100% */
+      align-items: center; /* Centrar los elementos verticalmente */
+    }
+    .div-body .div-cotizador{
+        margin-bottom: 5%;
+    }
+
+    .btn-sisben {
+        position: static !important;
+        margin-bottom: 3%;
+        margin-top: -2%;
+        margin-left: 5%;
+    }
+    .div-body .div-cotizador h1{
+        font-size: 25px;
+        width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+    .div-body {
+      /* Estilos específicos para dispositivos móviles */
+      flex-direction: column; /* Alinear los elementos en columna */
+      height: auto; /* Cambiar la altura a auto para que se ajuste al contenido */
+      padding: 2px; /* Agregar un poco de espacio alrededor del contenido */
+      margin: auto;
+      max-width: 100vh; /* Ajustar el ancho al 100% */
+      align-items: center; /* Centrar los elementos verticalmente */
+    }
+
+    .div-body .div-cotizador img{
+        height: 10%;
+    }
+
+    .div-body .div-cotizador h1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .div-body .div-cotizador p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .div-body .div-cotizador {
+       margin-bottom: 5%;
+
+  }
+
+  .div-form{
+    padding: 4%;
+  }
+}
+
+@media screen and (max-width: 400px){
+    .div-body .div-cotizador img{
+        height: 120px;
+        margin-top: 20px;
+    }
+
+    .div-body .div-cotizador h1{
+        font-size: 20px;
+        width: 100%;
+        
+    }
+
+    .div-body .div-cotizador p {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .div-body .div-cotizador img{
+        height: 120px;
+        margin-top: 20px;
+    }
+
+    .div-body .div-cotizador h1{
+        font-size: 20px;
+        width: 100%;
+        
+    }
+
+    .div-body .div-cotizador p {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+.div-form {
+    background-color: #859C4C;
+    width: fit-content;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: left;
+    margin-left: 6%;
+    border-radius: 15px;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.div-cotizador {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin-left: 4%;
+}
+
+.div-cotizador img {
+    width: 200px;
+    margin: 2%;
+}
+
+.div-cotizador p {
+    width: 250px;
+}
+
+.div-cotizador h1 {
+    margin-bottom: -2%;
+    margin-top: 17%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+form#calculadoraForm label {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+form#calculadoraForm span {
+    display: block;
+    margin-left: 10%;
+}
+
+form#calculadoraForm input {
+    width: 70%;
+    height: 20%;
+    border-radius: 15px;
+    box-shadow: none; /* Elimina las sombras */
+    padding: 10px; /* Agrega espacio alrededor del texto */
+    border: 1px solid #ccc; /* Define un borde sutil */
+    outline: none; /* Elimina el contorno azul que aparece al seleccionar el input */
+    margin-left: 10%;
+}
+
+
+form#calculadoraForm select {
+    width: 76%;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: none; /* Elimina las sombras */
+    padding: 10px; /* Agrega espacio alrededor del texto */
+    border: 1px solid #ccc; /* Define un borde sutil */
+    outline: none; /* Elimina el contorno azul que aparece al seleccionar el input */
+    margin-left: 10%;
+   
+}
+
+
+form#calculadoraForm button {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border: none;
+    border-radius: 20px; /* Ajusta el valor para más o menos redondeo */
+    box-shadow: none; /* Elimina cualquier sombra */
+    padding: 10px 20px; /* Opcional: ajusta el relleno interno */
+    cursor: pointer; /* Opcional: cambia el cursor al pasar sobre el botón */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #859C4C;
+    margin-top: 1%;
+}
+
+.div-form-resultados {
+    display: flex;
+}
+
+
+
+#resultado {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn-sisben {
+    position: absolute;
+    bottom: 27vh;/* Ajusta la distancia desde el borde inferior */
+    left: 20vw; /* Ajusta la distancia desde el borde derecho */
+    background-color: #585858; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 20px; /* Borde redondeado del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 16px; /* Tamaño de la fuente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    z-index: 999; /* Asegura que el botón esté por encima del resto del contenido */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+/* Ajuste para pantallas menores a 1300px */
+
+
+@media screen and (max-width: 1500px) {
+    .btn-sisben {
+        left: 20vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .btn-sisben {
+        left: 20vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .btn-sisben {
+        left: 16vw;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .btn-sisben {
+        left: 19vw;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .btn-sisben {
+        left: 17vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn-sisben {
+        left: 16vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .btn-sisben {
+        left: 12vw;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .btn-sisben {
+        left: 13vw;
+    }
+}
+
+/* Ajuste para pantallas menores a 1000px */
+@media screen and (max-width: 1000px) {
+    .btn-sisben {
+        left: 10vw;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .btn-sisben {
+        left: 12vw;
+    }
+}
+
+/* Ajuste para pantallas menores a 980px */
+@media screen and (max-width: 980px) {
+    .btn-sisben {
+        left: 11vw;
+    }
+}
+
+/* Ajuste para pantallas menores a 966px */
+@media screen and (max-width: 966px) {
+    .btn-sisben {
+        left: 12vw;
+    }
+}
+
+/* Ajuste para pantallas menores a 967px */
+@media screen and (max-width: 967px) {
+    .btn-sisben {
+        left: 11.5vw;
+    }
+}
+
+.btn-sisben:hover {
+    background-color: #444444; /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+.btn-ok{
+    background-color: #859C4C;
+    border-color: #859C4C;
+}
+
+
+.btn-ok:hover{
+    background-color: #6b7e3c;
+    border-color: #6b7e3c;
+}
+

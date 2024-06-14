@@ -1,0 +1,10 @@
+# Ignorar los módulos de Node.js
+node_modules/
+
+# Otros archivos o directorios que deseas ignorar (por ejemplo, archivos generados)
+# archivo.txt
+# carpeta/
+
+# .gitignore
+.env
+
