@@ -15,7 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="calculadora.css">
-
 </head>
 
 <body>
@@ -147,20 +146,24 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var nombreInput = document.getElementById("nombre");
-            var emailInput = document.getElementById("email"); // Cambiado de "celular" a "email"
+            var emailInput = document.getElementById("email");
+            var ingresosUsuarioInput = document.getElementById("ingresosUsuario");
             var ingresosInput = document.getElementById("ingresos");
-
+    
             var errorNombre = document.getElementById("errorNombre");
-            var errorEmail = document.getElementById("errorEmail"); // Cambiado de "errorCelular" a "errorEmail"
+            var errorEmail = document.getElementById("errorEmail");
             var errorIngresos = document.getElementById("errorIngresos");
-
+    
             var calcularButton = document.getElementById("calcularButton");
-            var generarImagenButton = document.getElementById("generarImagenButton"); // Agregado
-
+            var generarImagenButton = document.getElementById("generarImagenButton");
+    
             function verificarCampos() {
-                if (nombreInput.value !== "" && emailInput.checkValidity() && ingresosInput.value !== "" && ingresosInput.value >= 1300000) { // Usar checkValidity() para validar el input de email
+                // Convertir el valor del input oculto a número
+                var ingresosValue = parseInt(ingresosInput.value, 10);
+    
+                if (nombreInput.value !== "" && emailInput.checkValidity() && !isNaN(ingresosValue) && ingresosValue >= 1300000) {
                     calcularButton.disabled = false;
-                    generarImagenButton.display = "none"; // Habilitar el botón de generar imagen
+                    generarImagenButton.disabled = false; // Habilitar el botón de generar imagen
                     errorNombre.style.display = "none";
                     errorEmail.style.display = "none";
                     errorIngresos.style.display = "none";
@@ -172,24 +175,23 @@
                     } else {
                         errorNombre.style.display = "none";
                     }
-                    if (emailInput.value !== "" && !emailInput.checkValidity()) { // Verificar la validez del email
+                    if (emailInput.value !== "" && !emailInput.checkValidity()) {
                         errorEmail.style.display = "block";
                     } else {
                         errorEmail.style.display = "none";
                     }
-                    if (ingresosInput.value !== "" && ingresosInput.value < 1300000) {
+                    if (isNaN(ingresosValue) || ingresosValue < 1300000) {
                         errorIngresos.style.display = "block";
                     } else {
                         errorIngresos.style.display = "none";
                     }
                 }
             }
-
+    
             nombreInput.addEventListener("input", verificarCampos);
-            emailInput.addEventListener("input", verificarCampos); // Cambiado de "celularInput" a "emailInput"
-            ingresosInput.addEventListener("input", verificarCampos);
+            emailInput.addEventListener("input", verificarCampos);
+            ingresosUsuarioInput.addEventListener("input", verificarCampos);
         });
-
     </script>
 
 

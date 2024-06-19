@@ -143,7 +143,6 @@ function calcular() {
         cuotaEspecialCesantia = cuotaEspecialCesantia * 2;
     };
 
-    console.log("Los ingresos calculados son:  " + ingresosCalculados)
 
     // Calcular cuotaMensualInicial según el valorCuotaInicial
 
