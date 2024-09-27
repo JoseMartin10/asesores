@@ -1,0 +1,138 @@
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5%;
+
+}
+
+
+
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre los elementos */
+    max-width: 800px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 2%;
+}
+
+.form-group {
+    flex: 1 1 45%; /* Ocupa 45% del ancho del contenedor, permite flexibilidad */
+    min-width: 300px; /* Ancho mínimo para evitar que se rompa en pantallas pequeñas */
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input .title{
+    color: #6b7e3c !important;
+}
+input[type="text"],
+select {
+    width: 100%; /* Todos los inputs y selects ocupan el 100% del ancho disponible */
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px; /* Espacio inferior entre inputs y selects */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Puedes ajustar el estilo del borde */
+    box-shadow: none; /* Elimina cualquier sombra */
+}
+input[type="date"] {
+    width: 100%; /* Todos los inputs y selects ocupan el 100% del ancho disponible */
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px; /* Espacio inferior entre inputs y selects */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Puedes ajustar el estilo del borde */
+    box-shadow: none; /* Elimina cualquier sombra */
+    
+
+}
+/* Oculta el checkbox original */
+input[type="checkbox"] {
+    appearance: none; /* Elimina el estilo predeterminado */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc; /* Borde del checkbox */
+    border-radius: 5px; /* Bordes redondeados */
+    position: relative;
+    cursor: pointer;
+}
+
+/* Estilo cuando el checkbox está marcado */
+input[type="checkbox"]:checked {
+    background-color: #859C4C; /* Fondo verde cuando está marcado */
+    border: 2px solid #859C4C;
+}
+
+/* Añade la "palomita" personalizada cuando está marcado */
+input[type="checkbox"]:checked::after {
+    content: '\2713'; /* Símbolo de checkmark */
+    font-size: 10px;
+    color: white; /* Color de la palomita */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    flex: 1 1 100%; /* Ocupa todo el ancho en una sola línea */
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+
+.div-para-centrar{
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+}
+button {
+    font-size: 16px;
+    background-color: #859C4C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 1.3% 2%;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #6b7e3c;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+img {
+    width: 400px;
+}
+
+@media screen and (max-width: 411px) {
+    img {
+        width: 70vw;
+    }
+
+    .form-group {
+        flex: 1 1 100%; /* En pantallas pequeñas, ocupar todo el ancho disponible */
+    }
+
+    .button-container {
+        justify-content: flex-start; /* Alinear los botones a la izquierda en pantallas pequeñas */
+    }
+}
